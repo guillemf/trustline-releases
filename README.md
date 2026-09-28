@@ -17,24 +17,26 @@ with the full description and the download buttons, is at
 
 ## Download
 
-Current version: **0.1.0**. Every version, with its release notes, is listed
+Current version: **0.2.0**. Every version, with its release notes, is listed
 under [Releases](https://github.com/guillemf/trustline-releases/releases).
 
 | Platform | Download | Requirements |
 | --- | --- | --- |
-| macOS | [Trustline_0.1.0_universal.dmg](https://github.com/guillemf/trustline-releases/releases/download/v0.1.0/Trustline_0.1.0_universal.dmg) · 12 MB | Universal — Intel and Apple silicon |
-| Windows | [Trustline_0.1.0_x64-setup.exe](https://github.com/guillemf/trustline-releases/releases/download/v0.1.0/Trustline_0.1.0_x64-setup.exe) · 4.3 MB | Windows 10 or later · 64-bit |
-| Linux | [Trustline_0.1.0_amd64.AppImage](https://github.com/guillemf/trustline-releases/releases/download/v0.1.0/Trustline_0.1.0_amd64.AppImage) · 88 MB | x86_64 · Ubuntu 22.04 or newer and equivalents |
-| Linux · Debian | [Trustline_0.1.0_amd64.deb](https://github.com/guillemf/trustline-releases/releases/download/v0.1.0/Trustline_0.1.0_amd64.deb) · 9.7 MB | Debian 12+, Ubuntu 22.04+, and derivatives |
+| macOS | [Trustline_0.2.0_universal.dmg](https://github.com/guillemf/trustline-releases/releases/download/v0.2.0/Trustline_0.2.0_universal.dmg) | Universal — Intel and Apple silicon |
+| Windows | [Trustline_0.2.0_x64-setup.exe](https://github.com/guillemf/trustline-releases/releases/download/v0.2.0/Trustline_0.2.0_x64-setup.exe) | Windows 10 or later · 64-bit |
+| Linux | [Trustline_0.2.0_amd64.AppImage](https://github.com/guillemf/trustline-releases/releases/download/v0.2.0/Trustline_0.2.0_amd64.AppImage) | x86_64 · Ubuntu 22.04 or newer and equivalents |
+| Linux · Debian | [Trustline_0.2.0_amd64.deb](https://github.com/guillemf/trustline-releases/releases/download/v0.2.0/Trustline_0.2.0_amd64.deb) | Debian 12+, Ubuntu 22.04+, and derivatives |
 
-Prefer the `.deb` on any Debian-derived distribution. The AppImage is nine times
+Prefer the `.deb` on any Debian-derived distribution. The AppImage is many times
 larger for the same application because it carries its own copy of the WebKitGTK
 rendering engine; the `.deb` declares that engine as a dependency and lets your
 package manager supply it.
 
-There is no in-app update check yet, so watching this repository's releases — or
-the product page, which always names the current version — is how to find out
-that a new one exists.
+Versions from 0.2.0 onward ask this repository once a day whether a newer
+release has been published, and say so in the app if one has. The request sends
+nothing about you, and Preferences → About can turn it off. Earlier versions do
+not check; watching this repository's releases — or the product page, which
+always names the current version — is how to find out that a new one exists.
 
 ### The first launch needs one extra step
 
@@ -47,7 +49,7 @@ certificate it recognises — not that it found anything wrong with it.
   it by double-click the first time will not offer that choice.
 - **Windows** — choose *More info*, then *Run anyway*.
 - **Linux** — no warning, but an AppImage has to be made executable before it
-  will run: `chmod +x Trustline_0.1.0_amd64.AppImage`.
+  will run: `chmod +x Trustline_0.2.0_amd64.AppImage`.
 
 Certificates are being obtained, and these warnings will disappear in a later
 release.
@@ -95,8 +97,10 @@ Preferences.
 
 Mail-account credentials go to your operating system's keychain — never to a
 file on disk. The only servers the application contacts are the mail accounts
-you enter yourself. Nothing is synced, nothing is analysed, and there is no
-telemetry of any kind.
+you enter yourself and, once a day, GitHub — to ask whether a newer version has
+been published. That request sends nothing about you or your notes, and you can
+turn it off. Nothing is synced, nothing is analysed, and there is no telemetry
+of any kind.
 
 ## Licence
 
