@@ -22,15 +22,15 @@ under [Releases](https://github.com/guillemf/trustline-releases/releases).
 
 | Platform | Download | Requirements |
 | --- | --- | --- |
-| macOS | [Trustline_0.2.0_universal.dmg](https://github.com/guillemf/trustline-releases/releases/download/v0.2.0/Trustline_0.2.0_universal.dmg) | Universal — Intel and Apple silicon |
-| Windows | [Trustline_0.2.0_x64-setup.exe](https://github.com/guillemf/trustline-releases/releases/download/v0.2.0/Trustline_0.2.0_x64-setup.exe) | Windows 10 or later · 64-bit |
-| Linux | [Trustline_0.2.0_amd64.AppImage](https://github.com/guillemf/trustline-releases/releases/download/v0.2.0/Trustline_0.2.0_amd64.AppImage) | x86_64 · Ubuntu 22.04 or newer and equivalents |
-| Linux · Debian | [Trustline_0.2.0_amd64.deb](https://github.com/guillemf/trustline-releases/releases/download/v0.2.0/Trustline_0.2.0_amd64.deb) | Debian 12+, Ubuntu 22.04+, and derivatives |
+| macOS | [Trustline_0.2.0_universal.dmg](https://github.com/guillemf/trustline-releases/releases/download/v0.2.0/Trustline_0.2.0_universal.dmg) · 13.5 MB | Universal — Intel and Apple silicon |
+| Windows | [Trustline_0.2.0_x64-setup.exe](https://github.com/guillemf/trustline-releases/releases/download/v0.2.0/Trustline_0.2.0_x64-setup.exe) · 4.8 MB | Windows 10 or later · 64-bit |
+| Linux | [Trustline_0.2.0_amd64.AppImage](https://github.com/guillemf/trustline-releases/releases/download/v0.2.0/Trustline_0.2.0_amd64.AppImage) · 88 MB | x86_64 · Ubuntu 22.04 or newer and equivalents |
+| Linux · Debian | [Trustline_0.2.0_amd64.deb](https://github.com/guillemf/trustline-releases/releases/download/v0.2.0/Trustline_0.2.0_amd64.deb) · 10.7 MB | Debian 12+, Ubuntu 22.04+, and derivatives |
 
-Prefer the `.deb` on any Debian-derived distribution. The AppImage is many times
-larger for the same application because it carries its own copy of the WebKitGTK
-rendering engine; the `.deb` declares that engine as a dependency and lets your
-package manager supply it.
+Prefer the `.deb` on any Debian-derived distribution. The AppImage is eight
+times larger for the same application because it carries its own copy of the
+WebKitGTK rendering engine; the `.deb` declares that engine as a dependency and
+lets your package manager supply it.
 
 Versions from 0.2.0 onward ask this repository once a day whether a newer
 release has been published, and say so in the app if one has. The request sends
