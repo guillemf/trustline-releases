@@ -17,15 +17,15 @@ with the full description and the download buttons, is at
 
 ## Download
 
-Current version: **0.2.0**. Every version, with its release notes, is listed
+Current version: **0.3.0**. Every version, with its release notes, is listed
 under [Releases](https://github.com/guillemf/trustline-releases/releases).
 
 | Platform | Download | Requirements |
 | --- | --- | --- |
-| macOS | [Trustline_0.2.0_universal.dmg](https://github.com/guillemf/trustline-releases/releases/download/v0.2.0/Trustline_0.2.0_universal.dmg) · 13.5 MB | Universal — Intel and Apple silicon |
-| Windows | [Trustline_0.2.0_x64-setup.exe](https://github.com/guillemf/trustline-releases/releases/download/v0.2.0/Trustline_0.2.0_x64-setup.exe) · 4.8 MB | Windows 10 or later · 64-bit |
-| Linux | [Trustline_0.2.0_amd64.AppImage](https://github.com/guillemf/trustline-releases/releases/download/v0.2.0/Trustline_0.2.0_amd64.AppImage) · 88 MB | x86_64 · Ubuntu 22.04 or newer and equivalents |
-| Linux · Debian | [Trustline_0.2.0_amd64.deb](https://github.com/guillemf/trustline-releases/releases/download/v0.2.0/Trustline_0.2.0_amd64.deb) · 10.7 MB | Debian 12+, Ubuntu 22.04+, and derivatives |
+| macOS | [Trustline_0.3.0_universal.dmg](https://github.com/guillemf/trustline-releases/releases/download/v0.3.0/Trustline_0.3.0_universal.dmg) · 13.7 MB | Universal — Intel and Apple silicon |
+| Windows | [Trustline_0.3.0_x64-setup.exe](https://github.com/guillemf/trustline-releases/releases/download/v0.3.0/Trustline_0.3.0_x64-setup.exe) · 4.8 MB | Windows 10 or later · 64-bit |
+| Linux | [Trustline_0.3.0_amd64.AppImage](https://github.com/guillemf/trustline-releases/releases/download/v0.3.0/Trustline_0.3.0_amd64.AppImage) · 88.4 MB | x86_64 · Ubuntu 22.04 or newer and equivalents |
+| Linux · Debian | [Trustline_0.3.0_amd64.deb](https://github.com/guillemf/trustline-releases/releases/download/v0.3.0/Trustline_0.3.0_amd64.deb) · 10.8 MB | Debian 12+, Ubuntu 22.04+, and derivatives |
 
 Prefer the `.deb` on any Debian-derived distribution. The AppImage is eight
 times larger for the same application because it carries its own copy of the
@@ -38,21 +38,21 @@ nothing about you, and Preferences → About can turn it off. Earlier versions d
 not check; watching this repository's releases — or the product page, which
 always names the current version — is how to find out that a new one exists.
 
-### The first launch needs one extra step
+### On Windows, the first launch needs one extra step
 
-These builds are not yet signed with a paid developer certificate, so macOS and
-Windows will both warn that the publisher cannot be verified. What that warning
-means in practice is that the operating system can see the file carries no
-certificate it recognises — not that it found anything wrong with it.
+The macOS builds are signed and notarised by Apple, so they open normally: no
+warning and no Terminal step. The Windows build is not yet signed with a paid
+developer certificate, so Windows will warn that the publisher cannot be
+verified. What that warning means in practice is that the operating system can
+see the file carries no certificate it recognises — not that it found anything
+wrong with it.
 
-- **macOS** — right-click the app and choose *Open*, then confirm once. Opening
-  it by double-click the first time will not offer that choice.
 - **Windows** — choose *More info*, then *Run anyway*.
 - **Linux** — no warning, but an AppImage has to be made executable before it
-  will run: `chmod +x Trustline_0.2.0_amd64.AppImage`.
+  will run: `chmod +x Trustline_0.3.0_amd64.AppImage`.
 
-Certificates are being obtained, and these warnings will disappear in a later
-release.
+A Windows certificate is being obtained, and this warning will disappear in a
+later release.
 
 ## What it does
 
