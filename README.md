@@ -17,15 +17,15 @@ with the full description and the download buttons, is at
 
 ## Download
 
-Current version: **0.3.0**. Every version, with its release notes, is listed
+Current version: **0.4.0**. Every version, with its release notes, is listed
 under [Releases](https://github.com/guillemf/trustline-releases/releases).
 
 | Platform | Download | Requirements |
 | --- | --- | --- |
-| macOS | [Trustline_0.3.0_universal.dmg](https://github.com/guillemf/trustline-releases/releases/download/v0.3.0/Trustline_0.3.0_universal.dmg) · 13.7 MB | Universal — Intel and Apple silicon |
-| Windows | [Trustline_0.3.0_x64-setup.exe](https://github.com/guillemf/trustline-releases/releases/download/v0.3.0/Trustline_0.3.0_x64-setup.exe) · 4.8 MB | Windows 10 or later · 64-bit |
-| Linux | [Trustline_0.3.0_amd64.AppImage](https://github.com/guillemf/trustline-releases/releases/download/v0.3.0/Trustline_0.3.0_amd64.AppImage) · 88.4 MB | x86_64 · Ubuntu 22.04 or newer and equivalents |
-| Linux · Debian | [Trustline_0.3.0_amd64.deb](https://github.com/guillemf/trustline-releases/releases/download/v0.3.0/Trustline_0.3.0_amd64.deb) · 10.8 MB | Debian 12+, Ubuntu 22.04+, and derivatives |
+| macOS | [Trustline_0.4.0_universal.dmg](https://github.com/guillemf/trustline-releases/releases/download/v0.4.0/Trustline_0.4.0_universal.dmg) · 15.4 MB | Universal — Intel and Apple silicon |
+| Windows | [Trustline_0.4.0_x64-setup.exe](https://github.com/guillemf/trustline-releases/releases/download/v0.4.0/Trustline_0.4.0_x64-setup.exe) · 5.3 MB | Windows 10 or later · 64-bit |
+| Linux | [Trustline_0.4.0_amd64.AppImage](https://github.com/guillemf/trustline-releases/releases/download/v0.4.0/Trustline_0.4.0_amd64.AppImage) · 89.2 MB | x86_64 · Ubuntu 22.04 or newer and equivalents |
+| Linux · Debian | [Trustline_0.4.0_amd64.deb](https://github.com/guillemf/trustline-releases/releases/download/v0.4.0/Trustline_0.4.0_amd64.deb) · 11.6 MB | Debian 12+, Ubuntu 22.04+, and derivatives |
 
 Prefer the `.deb` on any Debian-derived distribution. The AppImage is eight
 times larger for the same application because it carries its own copy of the
@@ -38,6 +38,10 @@ nothing about you, and Preferences → About can turn it off. Earlier versions d
 not check; watching this repository's releases — or the product page, which
 always names the current version — is how to find out that a new one exists.
 
+From 0.4.0, Trustline can install later versions in place: press *Install now*
+when the app says one is available. Version 0.3.0 and earlier need this one
+download by hand.
+
 ### On Windows, the first launch needs one extra step
 
 The macOS builds are signed and notarised by Apple, so they open normally: no
@@ -49,7 +53,7 @@ wrong with it.
 
 - **Windows** — choose *More info*, then *Run anyway*.
 - **Linux** — no warning, but an AppImage has to be made executable before it
-  will run: `chmod +x Trustline_0.3.0_amd64.AppImage`.
+  will run: `chmod +x Trustline_0.4.0_amd64.AppImage`.
 
 Windows code signing is planned for a later release.
 
@@ -96,9 +100,10 @@ Preferences.
 
 Mail-account credentials go to your operating system's keychain — never to a
 file on disk. The only servers the application contacts are the mail accounts
-you enter yourself and, once a day, GitHub — to ask whether a newer version has
-been published. That request sends nothing about you or your notes, and you can
-turn it off. Nothing is synced, nothing is analysed, and there is no telemetry
+you enter yourself and GitHub: once a day to ask whether a newer version has
+been published, and, only when you press Install now, to download it. Neither
+request sends anything about you or your notes, and you can turn the daily
+check off. Nothing is synced, nothing is analysed, and there is no telemetry
 of any kind.
 
 ## Licence
