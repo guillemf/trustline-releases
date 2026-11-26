@@ -17,15 +17,15 @@ with the full description and the download buttons, is at
 
 ## Download
 
-Current version: **0.6.0**. Every version, with its release notes, is listed
+Current version: **1.0.0**. Every version, with its release notes, is listed
 under [Releases](https://github.com/guillemf/trustline-releases/releases).
 
 | Platform | Download | Requirements |
 | --- | --- | --- |
-| macOS | [Trustline_0.6.0_universal.dmg](https://github.com/guillemf/trustline-releases/releases/download/v0.6.0/Trustline_0.6.0_universal.dmg) · 17.0 MB | Universal — Intel and Apple silicon |
-| Windows | [Trustline_0.6.0_x64-setup.exe](https://github.com/guillemf/trustline-releases/releases/download/v0.6.0/Trustline_0.6.0_x64-setup.exe) · 5.9 MB | Windows 10 or later · 64-bit |
-| Linux | [Trustline_0.6.0_amd64.AppImage](https://github.com/guillemf/trustline-releases/releases/download/v0.6.0/Trustline_0.6.0_amd64.AppImage) · 90.0 MB | x86_64 · Ubuntu 22.04 or newer and equivalents |
-| Linux · Debian | [Trustline_0.6.0_amd64.deb](https://github.com/guillemf/trustline-releases/releases/download/v0.6.0/Trustline_0.6.0_amd64.deb) · 12.5 MB | Debian 12+, Ubuntu 22.04+, and derivatives |
+| macOS | [Trustline_1.0.0_universal.dmg](https://github.com/guillemf/trustline-releases/releases/download/v1.0.0/Trustline_1.0.0_universal.dmg) · 17.0 MB | Universal — Intel and Apple silicon |
+| Windows | [Trustline_1.0.0_x64-setup.exe](https://github.com/guillemf/trustline-releases/releases/download/v1.0.0/Trustline_1.0.0_x64-setup.exe) · 5.9 MB | Windows 10 or later · 64-bit |
+| Linux | [Trustline_1.0.0_amd64.AppImage](https://github.com/guillemf/trustline-releases/releases/download/v1.0.0/Trustline_1.0.0_amd64.AppImage) · 90.0 MB | x86_64 · Ubuntu 22.04 or newer and equivalents |
+| Linux · Debian | [Trustline_1.0.0_amd64.deb](https://github.com/guillemf/trustline-releases/releases/download/v1.0.0/Trustline_1.0.0_amd64.deb) · 12.5 MB | Debian 12+, Ubuntu 22.04+, and derivatives |
 
 Prefer the `.deb` on any Debian-derived distribution. The AppImage is seven
 times larger for the same application because it carries its own copy of the
@@ -53,7 +53,7 @@ wrong with it.
 
 - **Windows** — choose *More info*, then *Run anyway*.
 - **Linux** — no warning, but an AppImage has to be made executable before it
-  will run: `chmod +x Trustline_0.6.0_amd64.AppImage`.
+  will run: `chmod +x Trustline_1.0.0_amd64.AppImage`.
 
 Windows code signing is planned for a later release.
 
